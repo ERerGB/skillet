@@ -1,0 +1,21 @@
+{
+  "name": "skillnet",
+  "version": "0.1.0",
+  "description": "Creator content terminal — discover skills, organize content, publish to platforms",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsup src/index.ts --format esm --dts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check": "tsc --noEmit",
+    "gen:index": "tsx scripts/generate-doc-index.ts all"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "tsx": "^4.19.0",
+    "tsup": "^8.3.0",
+    "vitest": "^3.0.0"
+  }
+}
