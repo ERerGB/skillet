@@ -16,7 +16,11 @@
  */
 
 import { readdirSync, readFileSync, writeFileSync, existsSync } from 'fs';
-import { join, basename, relative } from 'path';
+import { join, basename, relative, dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const DOC_ROOT = join(__dirname, '..', 'doc');
 

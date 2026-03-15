@@ -5,6 +5,7 @@
 <!-- INDEX:START -->
 | ADR | Title | Status | Date |
 |-----|-------|--------|------|
+| 001 | [Creator Content Terminal Architecture](001-creator-content-terminal.md) | Proposed | 2026-02-28 |
 <!-- INDEX:END -->
 
 ## Template
