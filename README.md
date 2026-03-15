@@ -1,4 +1,4 @@
-# SkillNet
+# Skillet
 
 面向自媒体创作者的内容生产力终端。
 
@@ -10,7 +10,7 @@
 IM → 查找 Skill Hub → 读取 Skills → 内容组织编排 → 发布
 ```
 
-SkillNet 是**产品层**——编排 [SkillRank](https://github.com/ERerGB/skillrank)（Hub 发现与排名）、[Prism](https://github.com/ERerGB/prism)（知识图谱）和平台 SDK（发布），为创作者提供端到端的内容工作流。
+Skillet 是**产品层**——编排 [SkillRank](https://github.com/ERerGB/skillrank)（Hub 发现与排名）、[Prism](https://github.com/ERerGB/prism)（知识图谱）和平台 SDK（发布），为创作者提供端到端的内容工作流。
 
 ## Architecture
 

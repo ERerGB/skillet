@@ -1,4 +1,4 @@
-# Known Issues — SkillNet
+# Known Issues — Skillet
 
 ## Open Items
 

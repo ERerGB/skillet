@@ -1,8 +1,8 @@
-# Architecture — SkillNet
+# Architecture — Skillet
 
 ## System Overview
 
-SkillNet is a creator-facing content terminal that orchestrates
+Skillet is a creator-facing content terminal that orchestrates
 SkillRank (hub discovery), Prism (knowledge graph), and platform SDKs
 (publishing) into an end-to-end content workflow accessible via IM agents.
 

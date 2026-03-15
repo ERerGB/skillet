@@ -1,7 +1,7 @@
 {
-  "name": "skillnet",
+  "name": "skillet",
   "version": "0.1.0",
-  "description": "Creator content terminal — discover skills, organize content, publish to platforms",
+  "description": "Skillet — creator content terminal: discover skills, organize content, publish to platforms",
   "type": "module",
   "private": true,
   "scripts": {

@@ -1,4 +1,4 @@
-# ADR-001: Creator Content Terminal Architecture
+# ADR-001: Skillet — Creator Content Terminal Architecture
 
 Status: Proposed
 Date: 2026-02-28
@@ -17,11 +17,11 @@ Date: 2026-02-28
 
 ## Decision
 
-### SkillNet 定位
+### Skillet 定位
 
-SkillNet 是**产品层 orchestrator**，不重复实现底层能力：
+Skillet 是**产品层 orchestrator**，不重复实现底层能力：
 
-| 能力 | 由谁提供 | SkillNet 的角色 |
+| 能力 | 由谁提供 | Skillet 的角色 |
 |------|---------|----------------|
 | Hub 发现与排名 | SkillRank | 调用 API，呈现结果 |
 | 内容存储与检索 | Prism | 调用 API，读写图谱 |
@@ -34,25 +34,25 @@ SkillNet 是**产品层 orchestrator**，不重复实现底层能力：
 ```
 1. Hub Discovery
    用户: "帮我找小红书相关的 Skill"
-   SkillNet → SkillRank API: GET /search?platform=xiaohongshu
+   Skillet → SkillRank API: GET /search?platform=xiaohongshu
    SkillRank → 返回排名后的 Hub + Skill 列表
 
 2. Skill Loading
    用户: "用这个 Skill"
-   SkillNet → 从 Hub 下载/缓存 SKILL.md
-   SkillNet → Prism: ingestFinding(skillUrl, title, content)
+   Skillet → 从 Hub 下载/缓存 SKILL.md
+   Skillet → Prism: ingestFinding(skillUrl, title, content)
    Prism → 提取结构化元数据，存入图谱
 
 3. Content Organization
    用户: "帮我写一篇关于 XX 的小红书笔记"
-   SkillNet → 执行 Skill 的 Prompt 模板
-   SkillNet → Prism: recall("XX 相关素材")
-   SkillNet → 组合素材 + Skill 输出 → 编排内容
+   Skillet → 执行 Skill 的 Prompt 模板
+   Skillet → Prism: recall("XX 相关素材")
+   Skillet → 组合素材 + Skill 输出 → 编排内容
 
 4. Publishing
    用户: "发布到小红书"
-   SkillNet → 平台 SDK: 格式适配 + API 调用
-   SkillNet → 反馈发布结果
+   Skillet → 平台 SDK: 格式适配 + API 调用
+   Skillet → 反馈发布结果
 ```
 
 ### V1 MVP
@@ -79,7 +79,7 @@ V1 建议先走路径 A（OpenClaw），降低 IM 接入成本。
 
 ### Benefits
 - 创作者通过已熟悉的 IM 工具即可使用，零学习成本
-- 底层能力由 SkillRank + Prism 提供，SkillNet 只做编排
+- 底层能力由 SkillRank + Prism 提供，Skillet 只做编排
 - 平台 SDK 封装为独立适配层，新增平台只需加适配器
 - 基于 Skill 生态，能力可以由社区贡献和迭代
 

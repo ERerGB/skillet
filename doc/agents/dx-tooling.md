@@ -1,4 +1,4 @@
-# DX Tooling — SkillNet
+# DX Tooling — Skillet
 
 ## Auto-Generated Doc Indexes
 

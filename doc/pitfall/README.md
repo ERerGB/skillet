@@ -1,4 +1,4 @@
-# Known Pitfalls — SkillNet
+# Known Pitfalls — Skillet
 
 ## Index
 
