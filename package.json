@@ -10,12 +10,16 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "check": "tsc --noEmit",
-    "gen:index": "tsx scripts/generate-doc-index.ts all"
+    "gen:index": "doc-governance gen-index --root .",
+    "doc:check": "doc-governance check --root .",
+    "doc:governance": "doc-governance run --root ."
   },
   "devDependencies": {
+    "@erergb/doc-governance": "git+https://github.com/ERerGB/dev-doc-governance.git#f99536933a99d905ee43bab4cf76001ca2252ecd",
     "typescript": "^5.7.0",
     "tsx": "^4.19.0",
     "tsup": "^8.3.0",
     "vitest": "^3.0.0"
-  }
+  },
+  "packageManager": "pnpm@10.24.0+sha512.01ff8ae71b4419903b65c60fb2dc9d34cf8bb6e06d03bde112ef38f7a34d6904c424ba66bea5cdcf12890230bf39f9580473140ed9c946fef328b6e5238a345a"
 }
