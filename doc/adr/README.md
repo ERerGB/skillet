@@ -6,6 +6,7 @@
 | ADR | Title | Status | Date |
 |-----|-------|--------|------|
 | 001 | [Skillet — Creator Content Terminal Architecture](001-creator-content-terminal.md) | Proposed | 2026-02-28 |
+| 002 | [Bidirectional Feedback Contract between SkillRank and Prism](002-bidirectional-feedback-contract.md) | Proposed | 2026-02-28 |
 <!-- INDEX:END -->
 
 ## Template
